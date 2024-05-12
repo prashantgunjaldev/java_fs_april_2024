@@ -1,0 +1,58 @@
+/* Element Selector */
+h1 {
+  color: brown;
+  background-color: aqua;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  background-color: aqua;
+  text-align: center;
+}
+
+/* Id Selector */
+/* Rarely used selctor */
+#pageHeading {
+  color: red;
+  background-color: yellow;
+  text-align: center;
+}
+
+/* Class Selector */
+.heading {
+  background-color: yellow;
+  text-align: center;
+  size: 14px;
+}
+
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+
+.subheading {
+  text-align: center;
+}
+
+/* Univarsal selector */
+
+* {
+  /* font-size: 20px; */
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Psuedo Selectors */
+/* Learn later */
+
+/* Grouping Selectors */
+
+h6,
+p,
+div {
+  color: green;
+  background-color: aqua;
+  text-align: right;
+}
