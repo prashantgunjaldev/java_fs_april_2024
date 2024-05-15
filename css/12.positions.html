@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <style>
+      /* 
+        Static
+        relative
+        fixed
+        absoulute
+        sticky */
+      div {
+        border: 1px solid red;
+        margin: 5px;
+        padding: 5px;
+      }
+
+      .relative {
+        position: relative;
+        left: 50px;
+        top: 15px;
+      }
+
+      .fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+
+      .sizing {
+        height: 150px;
+        position: relative;
+        overflow-y: scroll;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Positions</h1>
+    <div>
+      <div>I am by default static</div>
+    </div>
+
+    <div>
+      <div class="relative">I am relative</div>
+    </div>
+
+    <div>
+      <div class="fixed">I am relative</div>
+    </div>
+
+    <div class="sizing">
+      <div class="absolute">I am absolute</div>
+    </div>
+
+    <div class="sizing">
+      This is some text to fill blank space. This is some text to fill blank
+      space. This is some text to fill blank space. This is some text to fill
+      blank space. This is some text to fill blank space. This is some text to
+      fill blank space.
+      <div class="sticky">I am sticky</div>
+      This is some text to fill blank space. This is some text to fill blank
+      space. This is some text to fill blank space. This is some text to fill
+      blank space. This is some text to fill blank space. This is some text to
+      fill blank space. This is some text to fill blank space. This is some text
+      to fill blank space. This is some text to fill blank space. This is some
+      text to fill blank space. This is some text to fill blank space. This is
+      some text to fill blank space. This is some text to fill blank space. This
+      is some text to fill blank space. This is some text to fill blank space.
+      This is some text to fill blank space. This is some text to fill blank
+      space. This is some text to fill blank space. This is some text to fill
+      blank space. This is some text to fill blank space. This is some text to
+      fill blank space.This is some text to fill blank space. This is some text
+      to fill blank space. This is some text to fill blank space. This is some
+      text to fill blank space. This is some text to fill blank space. This is
+      some text to fill blank space. This is some text to fill blank space. This
+      is some text to fill blank space. This is some text to fill blank space.
+      This is some text to fill blank space. This is some text to fill blank
+      space. This is some text to fill blank space. This is some text to fill
+      blank space. This is some text to fill blank space. This is some text to
+      fill blank space. This is some text to fill blank space. This is some text
+      to fill blank space. This is some text to fill blank space. This is some
+      text to fill blank space. This is some text to fill blank space. This is
+      some text to fill blank space.
+    </div>
+  </body>
+</html>
