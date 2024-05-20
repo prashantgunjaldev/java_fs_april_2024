@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro of JS</title>
+  </head>
+  <body>
+    <h2 id="title">Functions</h2>
+
+    <input id="no1" type="number" />
+    <input id="no2" type="number" />
+
+    <button onclick="add()">Calculate</button>
+
+    <div id="Res"></div>
+
+    <script>
+      function add() {
+        let no1 = document.getElementById("no1").value;
+        let no2 = document.getElementById("no2").value;
+        let res = parseInt(no1) + parseInt(no2);
+        console.log("Res", res);
+        document.getElementById("Res").innerText = res;
+        //Not ret value
+      }
+    </script>
+  </body>
+</html>

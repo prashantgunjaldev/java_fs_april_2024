@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro of JS</title>
+  </head>
+  <body>
+    <h2 id="title">Array</h2>
+    <!-- Hadlers -->
+    <script>
+      let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      let names = ["Prashant", "Chandu", "Vikram"];
+
+      const num = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
+      console.log("num at postion 2", num[2]);
+
+      // Accessing Array using index
+      console.log("num at postion 2", numbers[2]);
+      console.log("names at postion 2", names[2]);
+
+      numbers[2] = 30;
+      console.log("num at postion 2", numbers[2]);
+
+      console.log("Total numbers", numbers.length);
+
+      console.log("All numbers", numbers);
+      console.log("Sorted numbers", numbers.sort());
+      console.log("All numbers", numbers.toString());
+      console.log("All numbers", numbers.join(">"));
+
+      console.log("names at postion 2", names.at(2));
+
+      //Push => add new emelent
+      names.push("Nilesh");
+      console.log("All Names", names);
+      // Pop = remove element - last
+      let name = names.pop();
+      console.log("Poped value is", name);
+      console.log("All Names", names);
+
+      // shift = remove element - first
+      names.shift();
+      console.log("All Names", names);
+      // unshift = remove element - first
+      names.unshift("Vikas");
+      console.log("All Names", names);
+
+      let names2 = ["Ravi", "Veera"];
+
+      names = names.concat(names2);
+      console.log("All Names", names);
+    </script>
+  </body>
+</html>

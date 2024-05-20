@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro of JS</title>
+  </head>
+  <body>
+    <h2 id="title">Functions</h2>
+
+    <script>
+      function add(no1, no2) {
+        let res = no1 + no2;
+        console.log("Res", res);
+        //Not ret value
+      }
+
+      function add2(no1, no2) {
+        let res = no1 + no2;
+        return res;
+      }
+
+      add(10, 20);
+
+      let res = add2(20, 50);
+      console.log("Res2", res);
+    </script>
+  </body>
+</html>
