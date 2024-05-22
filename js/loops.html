@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro of JS</title>
+  </head>
+  <body>
+    <h2 id="title">Loops</h2>
+    <script>
+      let numbers = [1, 2, 3, 4, 5];
+      //For
+      for (let i = 0; i < numbers.length; i++) {
+        console.log("Element is", numbers[i]);
+      }
+
+      // for in
+      console.log("For in");
+      for (let i in numbers) {
+        console.log("Element is", numbers[i]);
+      }
+      // for of
+      console.log("For of");
+      for (let elem of numbers) {
+        console.log("Element is", elem);
+      }
+      // forEach
+
+      console.log("While loop");
+      //while
+      let i = 0;
+      while (i < numbers.length) {
+        console.log("Element is", numbers[i]);
+        if (numbers[i] == 3) {
+          break;
+        }
+        i++;
+      }
+    </script>
+  </body>
+</html>
