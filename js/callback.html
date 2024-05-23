@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro of JS</title>
+  </head>
+  <body>
+    <h2 id="title">Error Handling</h2>
+
+    <div id="htmlTitle">HTML output demo</div>
+    <!-- Hadlers -->
+    <script>
+      function print(val) {
+        console.log("Result is ", val);
+      }
+
+      function add(no1, no2, cbFn) {
+        let res = no1 + no2;
+        cbFn(res);
+      }
+
+      add(10, 20, print);
+      add(13, 20, print);
+      add(15, 25, print);
+    </script>
+  </body>
+</html>

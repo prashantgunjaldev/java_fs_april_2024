@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro of JS</title>
+  </head>
+  <body>
+    <h2 id="title">Filter, Map & Reducer</h2>
+    <!-- Hadlers -->
+    <script>
+      let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      numbers.forEach((elem) => {
+        console.log(elem);
+      });
+
+      // Double the number
+      // [2,4,6,8,10,12,14,...20]
+      //Map, React Jss
+      let doubleNum = numbers.map((elem) => {
+        return elem * 2;
+      });
+      console.log("doubleNum", doubleNum);
+
+      // Even Numbers
+      //[2,4,6,8,10]
+      //filter
+      let evenNums = numbers.filter((elem) => {
+        return elem % 2 === 0;
+      });
+      console.log("evenNums", evenNums);
+      // Additiona of all numbers
+      //1+2+3....+10
+      //reducer
+      let finalResult = numbers.reduce((res, elem) => {
+        return res + elem;
+      }, 0);
+      console.log("finalResult", finalResult);
+    </script>
+  </body>
+</html>
